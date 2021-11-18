@@ -1,0 +1,90 @@
+﻿@model CourseWork1.Models.Orders
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Menu.ItemName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Menu.ItemName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Waiter.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Waiter.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstNameOfClient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstNameOfClient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastNameOfClient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastNameOfClient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Table)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Table)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeOfOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeOfOrder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
